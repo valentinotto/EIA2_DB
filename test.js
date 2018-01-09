@@ -1,5 +1,6 @@
 "use strict";
 exports.__esModule = true;
+var Http = require("http");
 var ServerTest;
 (function (ServerTest) {
     var server = Http.createServer();
