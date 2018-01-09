@@ -5,7 +5,7 @@
 	"author" : "Valentin Otto",
 	"main" : "test.js",
 	"scripts" : {
-		"start" : "node test.js"
+		"start" : "node ServerTest.js"
 	},
 	"engines" : {
 		"node" : "6.11.1"
