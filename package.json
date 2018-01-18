@@ -3,7 +3,7 @@
 	"version" : "0.0.1",
 	"description" : "Testing EIA2",
 	"author" : "Valentin Otto",
-	"main" : "test.js",
+	"main" : "ServerTest.js",
 	"scripts" : {
 		"start" : "node ServerTest.js"
 	},
