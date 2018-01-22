@@ -31,7 +31,6 @@ var ServerTest;
         _response.setHeader("Access-Control-Allow-Origin", "*");
         // Response-Body
         _response.write("Deine Weihnachtsbaumbestellung: <br>");
-        _response.write("Headers: " + _request.headers + "<br>");
         // ?
         var query = Url.parse(_request.url, true).query;
         // ?

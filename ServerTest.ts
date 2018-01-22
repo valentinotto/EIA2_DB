@@ -38,7 +38,7 @@ namespace ServerTest {
 
         // Response-Body
         _response.write("Deine Weihnachtsbaumbestellung: <br>");
-        _response.write("Headers: " + _request.headers + "<br>");
+
 
 
 
