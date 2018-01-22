@@ -35,8 +35,10 @@ var ServerTest;
         // ?
         var query = Url.parse(_request.url, true).query;
         // ?
+        _response.write('<ul>');
         for (var key in query)
-            _response.write(key + ": " + query[key]);
+            _response.write('<li>' + key + ": " + query[key] + '</li>');
+        _response.write('</ul>');
         // Antwort abschließen und abschicken
         _response.end();
     }
