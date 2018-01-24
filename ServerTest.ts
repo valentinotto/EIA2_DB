@@ -40,9 +40,6 @@ namespace ServerTest {
         _response.write("Deine Weihnachtsbaumbestellung: <br>");
 
 
-
-
-
         // ?
         let query: AssocStringString = Url.parse(_request.url, true).query;
         // ?
