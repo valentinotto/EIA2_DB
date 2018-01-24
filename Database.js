@@ -6,8 +6,8 @@ exports.__esModule = true;
  */
 var Mongo = require("mongodb");
 console.log("Database starting");
-var databaseURL = "mongodb://localhost:27017";
-var databaseName = "Test";
+var databaseURL;
+var databaseName;
 var db;
 var students;
 if (process.env.NODE_ENV == "production") {
