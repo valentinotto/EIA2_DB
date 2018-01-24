@@ -13,7 +13,7 @@ let students: Mongo.Collection;
 if (process.env.NODE_ENV == "production") {
     //    databaseURL = "mongodb://username:password@hostname:port/database";
     databaseURL = "mongodb://valentinotto:eia2test@ds113738.mlab.com:13738/eia2_node";
-    databaseName = "eia2";
+    databaseName = "eia2_node";
 }
 
 Mongo.MongoClient.connect(databaseURL, handleConnect);
