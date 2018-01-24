@@ -1,16 +1,17 @@
+"use strict";
 /**
  * Simple server managing between client and database
  * @author: Jirka Dell'Oro-Friedl
  */
-"use strict";
-const Http = require("http");
-const Url = require("url");
-const Database = require("./Database");
+exports.__esModule = true;
+var Http = require("http");
+var Url = require("url");
+var Database = require("./Database");
 console.log("Server starting");
-let port = process.env.PORT;
+var port = process.env.PORT;
 if (port == undefined)
     port = 8100;
-let server = Http.createServer();
+var server = Http.createServer();
 server.addListener("listening", handleListen);
 server.addListener("request", handleRequest);
 server.listen(port);
@@ -19,11 +20,11 @@ function handleListen() {
 }
 function handleRequest(_request, _response) {
     console.log("Request received");
-    let query = Url.parse(_request.url, true).query;
+    var query = Url.parse(_request.url, true).query;
     var command = query["command"];
     switch (command) {
         case "insert":
-            let student = {
+            var student = {
                 name: query["name"],
                 firstname: query["firstname"],
                 matrikel: parseInt(query["matrikel"])
