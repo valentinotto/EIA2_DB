@@ -46,5 +46,6 @@ export function findAll(_callback: Function): void {
             _callback("Error" + _e);
         else
             _callback(JSON.stringify(studentArray));
+            console.log(studentArray);
     }
 }

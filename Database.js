@@ -40,6 +40,7 @@ function findAll(_callback) {
             _callback("Error" + _e);
         else
             _callback(JSON.stringify(studentArray));
+        console.log(studentArray);
     }
 }
 exports.findAll = findAll;
